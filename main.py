@@ -1,16 +1,17 @@
 def main():
-    workhours = int(input('Enter your work hours: '))
+    work_hours = int(input("What's the number of work hours?: "))
     reg_hours = 40
     reg_rate = 18.25
     ov_rate = 27.78
 
    ##################################################
-   # Code your program here
+    print(work_hours)
+    
    ##################################################
-    # overtime = workhours - reg_hours
-    # overtime_wage = overtime * ov_rate
-    # regular_wage = reg_hours * reg_rate
-    # total_wage = regular_wage + overtime_wage
+    overtime = work_hours - reg_hours
+    overtime_wage = overtime * ov_rate
+    regular_wage = reg_hours * reg_rate
+    total_wage = regular_wage + overtime_wage
 
     print(f"Regular hours: {reg_hours} Regular Charge: {regular_wage}")
     print(f"Overtime hours: {overtime} Overtime Charge: {overtime_wage:.2f}")
